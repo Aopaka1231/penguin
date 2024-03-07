@@ -1,25 +1,29 @@
-import { FormInput } from '../components/FormImput';
-import { HistoryTable } from '../components/HistoryTable';
-import { ModalComponent } from '../components/Modal';
-import { SelectBox } from '../components/SelectBox';
+import { CustomButton } from "../components/CustomButton";
+import { FormInput } from "../components/FormInput";
+import { HistoryTable } from "../components/HistoryTable";
+import { CustomModal } from "../components/CustomModal";
+import { SelectBox } from "../components/SelectBox";
+
 const Room = () => {
   return (
-    <main>
-        <h1 className="text-5xl font-bold mx-3 mt-3">
-            旅行名
-        </h1>
-        <form className="flex flex-col justify-center items-center mt-5">
-            {/* <input name="text" className="border-2 border-black mb-5 mx-20"/>
-            <input name="money"className="border-2 border-black mb-5" /> */}
-            <FormInput label={'目的'} placeHolder={'ご飯'}/>
-            <FormInput label={'金額'} placeHolder={'8000'}/>
-            <SelectBox value={["hoge", "huga", "piyo"]} className="flex justify-center items-center"/>
-            <button type="submit" className="pt-10">追加</button>
-        </form>
-        <HistoryTable />
-        <ModalComponent />
-    </main>
-  )
-}
+    <main className="px-4 py-8">
+      <h1 className="text-5xl font-bold pb-14">旅行名</h1>
 
-export default Room
+      <form className="flex flex-col items-center pb-20 max-w-64 space-y-8 mx-auto">
+        <FormInput label={"目的"} placeHolder={"ご飯"} />
+        <FormInput label={"金額"} placeHolder={"8000"} />
+        <SelectBox
+          value={["hoge", "huga", "piyo"]}
+          className="flex justify-center items-center"
+        />
+        <CustomButton label="追加"></CustomButton>
+      </form>
+
+      <p className="text-2xl font-semibold pb-2">利用履歴</p>
+      <HistoryTable className="mb-10" />
+      <CustomModal className="flex justify-center" />
+    </main>
+  );
+};
+
+export default Room;
