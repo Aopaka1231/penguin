@@ -4,7 +4,7 @@ import { FC } from "react"
 export const RoomButton:FC<ButtonProps> = ({...props}) => {
   return (
     <>
-      <Button {...props}>タイトル</Button>
+      <Button layerStyle="componentStyle" {...props}>タイトル</Button>
     </>
   )
 }

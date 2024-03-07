@@ -8,7 +8,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className="bg-amber-400 min-h-screen">
+    <div className="bg-[F8F8F8] min-h-screen">
       <nav>
         <ul className="flex justify-center items-center bg-gray-500 h-10">
           <li className="mr-5">

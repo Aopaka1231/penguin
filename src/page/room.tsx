@@ -1,4 +1,6 @@
 import { FormInput } from '../components/FormImput';
+import { HistoryTable } from '../components/HistoryTable';
+import { ModalComponent } from '../components/Modal';
 import { SelectBox } from '../components/SelectBox';
 const Room = () => {
   return (
@@ -14,12 +16,8 @@ const Room = () => {
             <SelectBox value={["hoge", "huga", "piyo"]} className="flex justify-center items-center"/>
             <button type="submit" className="pt-10">追加</button>
         </form>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
+        <HistoryTable />
+        <ModalComponent />
     </main>
   )
 }

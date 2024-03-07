@@ -4,7 +4,7 @@ import { FC } from "react";
 type Props = {value: string[]} & MultiSelectProps
 export const SelectBox:FC<Props> = ({value, ...props}) => {
     return (
-        <MultiSelect placeholder="対象を選択" placement="right-start" iconProps={{color:"primary"}} {...props}>
+        <MultiSelect placeholder="対象を選択" placement="right-start" iconProps={{color:"primary"}} {...props} layerStyle="componentStyle">
                 {value.map((v) => (
                     <Option key={v} value={v}>{v}</Option>
                 ))}
