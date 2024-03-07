@@ -1,16 +1,16 @@
-import { MyButton } from "./components/Button"
-import { FormInput } from "./components/FormImput"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./page/home"
 
 
 
 function App() {
 
   return (
-    <>
-      <h1>Vite + React</h1>
-      <MyButton />
-      <FormInput label="test1" placeHolder="test2" errorMessage="test3"/>
-    </>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+        </Routes>
+    </BrowserRouter>
   )
 }
 
