@@ -43,26 +43,19 @@ export const CustomModal: FC<Props> = ({ className }) => {
               </Thead>
 
               <Tbody>
-                <Tr>
-                  <Td>A</Td>
-                  <Td isNumeric>20000</Td>
-                </Tr>
-                <Tr>
-                  <Td>B</Td>
-                  <Td isNumeric>10000</Td>
-                </Tr>
-                <Tr>
-                  <Td>C</Td>
-                  <Td isNumeric>20000</Td>
-                </Tr>
-                <Tr>
-                  <Td>D</Td>
-                  <Td isNumeric>8000</Td>
-                </Tr>
-                <Tr>
-                  <Td>E</Td>
-                  <Td isNumeric>20000</Td>
-                </Tr>
+              <Tr>
+            <Td >おひな</Td>
+            <Td  isNumeric>20000</Td>
+          </Tr>
+          <Tr>
+            <Td >清水
+            </Td>
+            <Td  isNumeric>10000</Td>
+          </Tr>
+          <Tr>
+            <Td >そよち</Td>
+            <Td  isNumeric>20000</Td>
+          </Tr>
               </Tbody>
             </NativeTable>
           </TableContainer>
