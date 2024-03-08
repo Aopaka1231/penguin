@@ -39,23 +39,16 @@ return (
 
         <Tbody>
           <Tr>
-            <Td >A</Td>
+            <Td >おひな</Td>
             <Td  isNumeric>20000</Td>
           </Tr>
           <Tr>
-            <Td >B</Td>
+            <Td >清水
+            </Td>
             <Td  isNumeric>10000</Td>
           </Tr>
           <Tr>
-            <Td >C</Td>
-            <Td  isNumeric>20000</Td>
-          </Tr>
-          <Tr>
-            <Td >D</Td>
-            <Td  isNumeric>8000</Td>
-          </Tr>
-          <Tr>
-            <Td >E</Td>
+            <Td >そよち</Td>
             <Td  isNumeric>20000</Td>
           </Tr>
         </Tbody>

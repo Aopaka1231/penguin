@@ -13,7 +13,7 @@ const Event = () => {
         <FormInput label={"目的"} placeHolder={"ご飯"} />
         <FormInput label={"金額"} placeHolder={"8000"} />
         <SelectBox
-          value={["hoge", "huga", "piyo"]}
+          value={["おひな", "清水", "そよち"]}
           className="flex justify-center items-center"
         />
         <CustomButton label="追加"></CustomButton>
