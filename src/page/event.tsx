@@ -4,7 +4,7 @@ import { HistoryTable } from "../components/HistoryTable";
 import { CustomModal } from "../components/CustomModal";
 import { SelectBox } from "../components/SelectBox";
 
-const Room = () => {
+const Event = () => {
   return (
     <main className="px-4 py-8">
       <h1 className="text-5xl font-bold pb-14">旅行名</h1>
@@ -26,4 +26,4 @@ const Room = () => {
   );
 };
 
-export default Room;
+export default Event;

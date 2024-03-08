@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Home from "./page/home"
-import Room from "./page/room"
+import Event from "./page/event";
 import Login from "./page/login";
 import Register from "./page/register";
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/register" element={<Register />} />
 
           <Route path="/home" element={<Home />} />
-          <Route path="/room" element={<Room />} />
+          <Route path="/event" element={<Event/>} />
         </Routes>
     </div>
     </BrowserRouter>
