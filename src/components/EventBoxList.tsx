@@ -19,7 +19,9 @@ export const EventBoxList: FC<Props> = ({eventInfoList, handleOnClick}) => {
     return (
         <>
             {eventInfoList?.map((item, i) => (
-                <EventBox key={i} eventInfo={item} onClick={handleClick(item)} />
+                <div className="pb-2">
+                    <EventBox key={i} eventInfo={item} onClick={handleClick(item)} />
+                </div>
             ))}
         </>
     )

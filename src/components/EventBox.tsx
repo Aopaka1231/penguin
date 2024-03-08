@@ -13,7 +13,7 @@ export const EventBox: FC<Props> = ({eventInfo, ...props}) => {
     return (
         <button className="min-w-56 px-4 py-4 rounded-xl font-medium text-xl bg-[#F1D6AB]" {...props}>
             {eventInfo.title}
-            <p>{eventInfo.menbers.join(', ')}</p>
+            <p className="font-thin text-base">{eventInfo.menbers.join(', ')}</p>
         </button>
     )
 }

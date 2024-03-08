@@ -42,7 +42,7 @@ const Home = () => {
   }
 
   return (
-    <main className="px-2 py-3">
+    <main className="px-2 py-3 ">
       <h1 className="text-2xl font-bold">イベントを選択or追加してください</h1>
 
       <form className="flex flex-col items-center mx-auto py-10 max-w-64 space-y-5">
@@ -51,7 +51,9 @@ const Home = () => {
         <CustomButton type="submit" label={"追加"} onClick={handleOnClick}/>
       </form>
 
-      <EventBoxList eventInfoList={events} handleOnClick={handleClickEventBox} />
+      <div className="flex flex-col items-center">
+        <EventBoxList eventInfoList={events} handleOnClick={handleClickEventBox} />
+      </div>
     </main>
   );
 };
