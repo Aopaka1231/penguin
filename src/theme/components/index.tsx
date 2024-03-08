@@ -1,4 +1,4 @@
+import { Button } from "./Button";
 import { FormControl } from "./Input";
-// import { Modal } from "./Modal";
 
-export default { FormControl};
+export default { FormControl, Button };
